@@ -6,7 +6,8 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
       <div class="navbar-brand">
         <router-link to="/" style="text-decoration: none;">
-          <a style="color:rgb(60, 60, 60);font-size:30px;text-decoration: none;">Phanudet</a>
+          <img src="../assets/logo.png" width="35" height="35">
+          <a style="color:rgb(60, 60, 60);font-size:30px;text-decoration: none;">hanudet</a>
         </router-link>
       </div>
       <button style="border:none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +45,13 @@
         </ul>
       </div>
     </nav>
+    <div class="main-content">
+      <div class="section-1-with-background" style="color:#ffffff;">
+        <div class="content-row-1">
+          <h1>Resume</h1>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -93,5 +101,14 @@ a {
     font-size:18px;
     margin-right: auto;
   }
+}
+
+.section-1-with-background {
+  height: 620px;
+  background-image: url('../assets/section-1.png');
+}
+
+.content-row-1 {
+  padding: 50px;
 }
 </style>

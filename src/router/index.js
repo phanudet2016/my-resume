@@ -5,6 +5,7 @@ import Resume from '@/components/Resume'
 import CV from '@/components/CV'
 import Grade from '@/components/Grade'
 import Contact from '@/components/Contact'
+import Portfolio from '@/components/Portfolio'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      component: Portfolio
     }
   ]
 })

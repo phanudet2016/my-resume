@@ -7,7 +7,7 @@
       <div class="navbar-brand">
         <router-link to="/" style="text-decoration: none;">
           <img src="../assets/logo.png" width="35" height="35">
-          <a style="color:rgb(60, 60, 60);font-size:30px;text-decoration: none;">hanudet</a>
+          <a style="color:rgb(60, 60, 60);font-size:30px;text-decoration: none;">Phanudet</a>
         </router-link>
       </div>
       <button style="border:none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
             </li>
           </router-link>
           <router-link to="/CV">
-            <li class="nav-item active" id="Hover">
+            <li class="nav-item" id="Hover">
               <a class="nav-link">CV</a>
             </li>
           </router-link>
@@ -38,7 +38,7 @@
             </li>
           </router-link>
           <router-link to="/Contact">
-            <li class="nav-item" id="Hover">
+            <li class="nav-item active" id="Hover">
               <a class="nav-link">Contact</a>
             </li>
           </router-link>
@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  name: 'cv',
+  name: 'portfolio',
   data () {
     return {
     }

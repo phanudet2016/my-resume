@@ -3,10 +3,11 @@
     <!-- <nav class="navbar navbar-light" style="background-color:#3d3d3d;height:31px;">
       <a class="navbar-brand" style="color:#ffffff;font-size:12px;">phanudetkawilai2016@gmail.com</a>
     </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
       <div class="navbar-brand">
         <router-link to="/" style="text-decoration: none;">
-          <a style="color:rgb(60, 60, 60);font-size:30px;text-decoration: none;">Phanudet</a>
+          <img src="../assets/logo.png" width="35" height="35" style="pointer-events: none;">
+          <a style="color:rgb(60, 60, 60);font-size:30px;text-decoration: none;">hanudet</a>
         </router-link>
       </div>
       <button style="border:none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +45,92 @@
         </ul>
       </div>
     </nav>
+    <div class="main-content" style="margin-top:72px;">
+      <div class="section-1-with-background" style="color:#ffffff;">
+        <div class="main-content-row-1">
+          <!-- <div class="text-inner-1">
+            <h1>Hello</h1>
+          </div>
+          <div class="text-inner-2">
+            <p>I'm Phanudet Kawilai</p>
+          </div>
+          <div class="text-inner-3">
+            <p>I am interested in Web / App Development career. I am a productive team player, fast learning and hard working</p>
+          </div> -->
+          <!-- <div class="card-group">
+            <div class="card" style="">
+              <div class="card-body">
+                <img src="../assets/me.png" alt="Card image cap" width="400" height="400" style="border-radius:400px;">
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div> -->
+          <div class="content-inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="../assets/me.png" alt="Card image cap" width="400" height="400" style="border-radius:400px;pointer-events: none;">
+                </div>
+                <div class="col-sm text-1" style="padding-top:200px;text-align: left;">
+                  <h1 style="font-size:60px;">Hello...</h1>
+                  <p style="font-size:35px;">I'm Phanudet Kawilai</p>
+                  <p style="font-size:16;">I am interested in Web / App Development career. I am a productive team player, fast learning and hard working, Able to work under pressure</p>
+                  <br>
+                  <div class="btn-to-link">
+                    <router-link to="/resume">
+                      <button>Resume</button>
+                    </router-link>
+                    <router-link to="/cv">
+                      <button>CV</button>
+                    </router-link>
+                    <router-link to="/grade">
+                      <button>Grade</button>
+                    </router-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-2-with-contact" style="color:#ffffff;">
+        <div class="content-inner">
+          <div class="logo-contact">
+            <img src="../assets/fb-icon.png" alt="Card image cap" style="border-radius:50;pointer-events: none;">
+            <img src="../assets/fb-ms-icon.png" alt="Card image cap" width="50" height="50" style="border-radius:50;pointer-events: none;">
+            <img src="../assets/github-icon.png" alt="Card image cap" width="50" height="50" style="border-radius:50;pointer-events: none;">
+            <img src="../assets/gmail-icon.png" alt="Card image cap" width="50" height="50" style="border-radius:50;pointer-events: none;">
+          </div>
+        </div>
+        <!-- <div class="content-inner">
+          <div class="container">
+            <div class="row main-content-row-1">
+              <div class="col-sm logo-contact" style="text-align: center;">
+                 <img src="../assets/fb-icon.png" alt="Card image cap" width="80" height="80" style="border-radius:100;pointer-events: none;">
+              </div>
+              <div class="col-sm logo-contact">
+                <img src="../assets/fb-ms-icon.png" alt="Card image cap" width="80" height="80" style="border-radius:100;pointer-events: none;">
+              </div>
+              <div class="col-sm logo-contact">
+                <img src="../assets/github-icon.png" alt="Card image cap" width="80" height="80" style="border-radius:100;pointer-events: none;">
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer">
+      <a style="color:#ffffff;font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
+    </div>
   </div>
 </template>
 
@@ -80,18 +167,123 @@ a {
   font-size:18px;
   margin-right: 230px;
 }
+.footer{
+    position: fixed;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3d3d3d;
+    color: white;
+    text-align: center;
+    padding-top: 19px;
+}
 
 #Hover a:hover{
   color: rgb(60, 135, 199);
 }
 
+.section-1-with-background {
+  height: 700px;
+  background-image: url('../assets/section-1home.png');
+}
+
+.main-content-row-1 {
+  padding: 50px;
+}
+
+.text-inner-1 h1 {
+  font-size: 60px;
+}
+.text-inner-2 p {
+  font-size: 25px;
+}
+.text-inner-3 p {
+  font-size: 18px;
+}
+
+.btn-to-link button {
+  width:167px;
+  height:53px;
+  border-radius: 100px;
+  border: 2px solid #ffffff;
+  background-color: Transparent;
+  color:#fff;
+  margin: 0 5px;
+}
+.btn-to-link button:hover {
+  background-color:rgb(60, 135, 199);
+  border: none;
+  transition: 0.3s;
+}
+
+.section-2-with-contact {
+  height: 180px;
+}
+.main-content-row-2 img{
+  /* margin: 0 10px; */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.main-content-row-2 {
+  padding: 50px;
+}
+.logo-contact img {
+  width: 40px;
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
 @media (max-width: 980px) {
   .navbar-brand {
-    margin-left:20px;
+    margin-left: 5px;
   }
   .navbar-nav {
-    font-size:18px;
+    font-size: 18px;
     margin-right: auto;
+  }
+
+  .col-sm text-1 {
+    width: 2px;
+  }
+  .col-sm img {
+    width: 200px;
+    height: 200px;
+  }
+  .text-1 {
+    margin-top: -150px;
+  }
+
+  .section-1-with-background {
+    height: 930px;
+    background-image: url('../assets/section-1home-for-m.png');
+  }
+
+  /* .btn-to-link {
+    text-align: center;
+  } */
+  .btn-to-link button {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  .footer {
+    position: inherit;
+  }
+
+  .logo-contact img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .logo-contact {
+    padding-top: 10px;
+  }
+
+  .section-2-with-contact {
+    height: 80px;
   }
 }
 </style>

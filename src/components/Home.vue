@@ -105,31 +105,24 @@
       <div class="section-2-with-contact" style="color:#ffffff;">
         <div class="content-inner">
           <div class="logo-contact">
-            <img src="../assets/fb-icon.png" alt="Card image cap" style="border-radius:50;pointer-events: none;">
-            <img src="../assets/fb-ms-icon.png" alt="Card image cap" width="50" height="50" style="border-radius:50;pointer-events: none;">
-            <img src="../assets/github-icon.png" alt="Card image cap" width="50" height="50" style="border-radius:50;pointer-events: none;">
-            <img src="../assets/gmail-icon.png" alt="Card image cap" width="50" height="50" style="border-radius:50;pointer-events: none;">
+            <a href="https://www.facebook.com/panudach.kawilai" target="_blank">
+              <img src="../assets/fb-icon.png" alt="Card image cap" style="border-radius:80;">
+            </a>
+            <a href="https://www.facebook.com/messages/t/panudach.kawilai" target="_blank">
+              <img src="../assets/fb-ms-icon.png" alt="Card image cap" style="border-radius:50;">
+            </a>
+            <a href="https://github.com/phanudet2016" target="_blank">
+              <img src="../assets/github-icon.png" alt="Card image cap" style="border-radius:50;">
+            </a>
+            <router-link to="/contact">
+              <img src="../assets/gmail-icon.png" alt="Card image cap" width="50" height="80" style="border-radius:50;">
+            </router-link>
           </div>
         </div>
-        <!-- <div class="content-inner">
-          <div class="container">
-            <div class="row main-content-row-1">
-              <div class="col-sm logo-contact" style="text-align: center;">
-                 <img src="../assets/fb-icon.png" alt="Card image cap" width="80" height="80" style="border-radius:100;pointer-events: none;">
-              </div>
-              <div class="col-sm logo-contact">
-                <img src="../assets/fb-ms-icon.png" alt="Card image cap" width="80" height="80" style="border-radius:100;pointer-events: none;">
-              </div>
-              <div class="col-sm logo-contact">
-                <img src="../assets/github-icon.png" alt="Card image cap" width="80" height="80" style="border-radius:100;pointer-events: none;">
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
     <div class="footer">
-      <a style="color:#ffffff;font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
+      <a style="color:rgb(244, 244, 244);font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
     </div>
   </div>
 </template>
@@ -145,6 +138,7 @@ export default {
 </script>
 
 <style scoped>
+
 h1, h2 {
   font-weight: normal;
 }
@@ -229,8 +223,8 @@ a {
   padding: 50px;
 }
 .logo-contact img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-top: 50px;
   margin-left: 50px;
 }
@@ -264,8 +258,8 @@ a {
     text-align: center;
   } */
   .btn-to-link button {
-    width: 100px;
-    height: 100px;
+    width: 72px;
+    height: 72px;
     margin-top: 10px;
   }
   .footer {

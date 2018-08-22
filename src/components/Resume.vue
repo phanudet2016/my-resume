@@ -3,7 +3,7 @@
     <!-- <nav class="navbar navbar-light" style="background-color:#3d3d3d;height:31px;">
       <a class="navbar-brand" style="color:#ffffff;font-size:12px;">phanudetkawilai2016@gmail.com</a>
     </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
       <div class="navbar-brand">
         <router-link to="/" style="text-decoration: none;">
           <img src="../assets/logo.png" width="35" height="35">
@@ -45,13 +45,109 @@
         </ul>
       </div>
     </nav>
+
     <div class="main-content">
       <div class="section-1-with-background" style="color:#ffffff;">
-        <div class="content-row-1">
-          <h1>Resume</h1>
+        <div class="content-row-1" >
+
+          <!-- <div class="content-inner">
+            <h1 style="font-size:60px;">My Resume</h1>
+            <div class="container" style="padding-top:20px;">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="../assets/section-1resume1.png" alt="Card image cap" width="1163" height="521" style="pointer-events: none;">
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="content-inner" style="padding-top:30px;">
+            <h1 style="font-size:60px;">My Resume</h1>
+            <div class="show-img" style="padding-top:30px;">
+              <img src="../assets/section-1resume1.png" width="1163" height="521" style="pointer-events: none;">
+            </div>
+            <h1 style="font-size:41px;color:#3d3d3d;padding-top:60px;" class="text-download"><b>Download my resume</b></h1>
+            <div class="btn-to-download" style="padding-top:10px;">
+              <button>Download</button>
+            </div>
+            <div class="content-resume" style="padding-top:60px;">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-1 icon-col">
+                    <img src="../assets/person-icon.png" style="text-align:left;pointer-events: none;">
+                  </div>
+                  <div class="col-sm-5 text-content" style="text-align:left;">
+                    <h1>Personal Info</h1>
+                    <p>
+                      <b>Name : Phanudet Kawilai</b><br>
+                      <b>Birthday : 30-06-1995 </b><br>
+                      <b>Age : 23 </b><br>
+                      <b>Nationality : Thai </b><br>
+                      <b>Race : Thai </b><br>
+                      <b>Religion : Buddhism </b><br>
+                      <b>Marital status: Single </b><br>
+                      <b>Phone : +66 8 4867 8738 </b><br>
+                      <b>Address : 99/64 Village No.4, Latkrathing Sub-district, Sanamchaikhet District, Chachoengsao, 24160 </b>
+                    </p>
+                  </div>
+                  <div class="col-sm-1 icon-col">
+                    <img src="../assets/skill-icon.png" style="pointer-events: none;">
+                  </div>
+                  <div class="col-sm-5 text-content" style="text-align:left;">
+                    <h1>Skills</h1>
+                    <p>
+                      <!-- <b>Vue.js</b> <i class="icon-skill"><img src="../assets/vue.png" width="50" height="50" style="text-align:left;pointer-events: none;"></i><br> -->
+                      <b>React Native</b><br>
+                      <b>Backend with Node.js</b><br>
+                      <b>Bootstrap</b><br>
+                      <b>HTML/CSS</b><br>
+                      <b>Javascript  </b><br>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-1 icon-col">
+                    <img src="../assets/education-icon.png" style="pointer-events: none;">
+                  </div>
+                  <div class="col-sm-5 text-content" style="text-align:left;">
+                    <h1>Education</h1>
+                    <p>
+                      <b>Name</b> : Phanudet Kawilai <br>
+                      <b>Birthday</b> : Phanudet Kawilai <br>
+                      <b>Age</b> : Phanudet Kawilai <br>
+                      <b>Nationality</b> : Thai <br>
+                      <b>Race</b> : Thai <br>
+                      <b>Religion </b> : Buddhism <br>
+                      <b>Marital status</b> : Single <br>
+                      <b>Phone</b> : +66 8 4867 8738 <br>
+                    </p>
+                  </div>
+                  <div class="col-sm-1 icon-col">
+                    <img src="../assets/rocket-icon.png" style="pointer-events: none;">
+                  </div>
+                  <div class="col-sm-5 text-content" style="text-align:left;">
+                    <h1>Experience</h1>
+                    <p>
+                      <b>Name</b> : Phanudet Kawilai <br>
+                      <b>Birthday</b> : Phanudet Kawilai <br>
+                      <b>Age</b> : Phanudet Kawilai <br>
+                      <b>Nationality</b> : Thai <br>
+                      <b>Race</b> : Thai <br>
+                      <b>Religion </b> : Buddhism <br>
+                      <b>Marital status</b> : Single <br>
+                      <b>Phone</b> : +66 8 4867 8738 <br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- <div class="footer">
+      <a style="color:rgb(244, 244, 244);font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
+    </div> -->
   </div>
 </template>
 
@@ -93,22 +189,113 @@ a {
   color: rgb(60, 135, 199);
 }
 
+.container-fluid {
+  width:1140px;
+}
+.icon-col img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+
+  /* ------------- shadow All around -------------- */
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  /* ----------------------------------------------- */
+}
+
+.icon-col {
+  height:100px;
+}
+
+.text-content {
+  border-bottom: 1px solid #dddddd;
+  color: #3d3d3d;
+  /* background-color: red; */
+}
+.text-content h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.text-content p {
+  font-size: 20px;
+}
+
+.icon-skill {
+  margin-left:330px;
+}
+
+.section-1-with-background {
+  height: 800px;
+  background-image: url('../assets/section-1resume.png');
+}
+
+.content-row-1 {
+  padding-top: 100px;
+}
+
+.btn-to-download button {
+  width:205px;
+  height:53px;
+  border-radius: 100px;
+  border: 2px solid #3c87c7;
+  background-color: #3c87c7;
+  color:#fff;
+  margin: 0 5px;
+  font-size: 22px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn-to-download button:hover {
+  background-color:#3d3d3d;
+  border: none;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
 @media (max-width: 980px) {
   .navbar-brand {
-    margin-left:20px;
+    margin-left: 5px;
   }
   .navbar-nav {
     font-size:18px;
     margin-right: auto;
   }
+
+  .show-img img {
+    height: 158px;
+    width: 320px;
+  }
+
+  .text-download b{
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .container-fluid {
+    width: 100%;
+  }
+  .icon-col {
+    padding-top: 20px;
+  }
+  .icon-col img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text-content {
+    padding-top: 50px;
+  }
+  .icon-col {
+    padding-top: 40px;
+  }
+
+  .text-content h1 {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .icon-skill {
+    margin-left:30px;
+  }
 }
 
-.section-1-with-background {
-  height: 620px;
-  background-image: url('../assets/section-1.png');
-}
-
-.content-row-1 {
-  padding: 50px;
-}
 </style>

@@ -82,7 +82,13 @@
                 <div class="col-sm text-1" style="padding-top:200px;text-align: left;">
                   <h1 style="font-size:60px;">Hello...</h1>
                   <p style="font-size:35px;">I'm Phanudet Kawilai</p>
-                  <p style="font-size:16;">I am interested in Web / App Development career. I am a productive team player, fast learning and hard working, Able to work under pressure</p>
+                  <p style="font-size:16;">
+                    I am interested in Web / App Development career. I am a productive team player,
+                    I would like to learn new things, fast learning,
+                    and come to work on time and were responsible for the work assigned.
+                    I completed the work by a specified time.
+                    I'm a very hard-working person and highly dedicated to work.
+                  </p>
                   <br>
                   <div class="btn-to-link">
                     <router-link to="/resume">
@@ -250,7 +256,7 @@ a {
   }
 
   .section-1-with-background {
-    height: 930px;
+    height: 1100px;
     background-image: url('../assets/section-1home-for-m.png');
   }
 
@@ -258,8 +264,8 @@ a {
     text-align: center;
   } */
   .btn-to-link button {
-    width: 72px;
-    height: 72px;
+    width: 82px;
+    height: 82px;
     margin-top: 10px;
   }
   .footer {

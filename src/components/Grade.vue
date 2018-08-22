@@ -88,7 +88,7 @@ a {
 
 @media (max-width: 980px) {
   .navbar-brand {
-    margin-left:20px;
+    margin-left: 5px;
   }
   .navbar-nav {
     font-size:18px;

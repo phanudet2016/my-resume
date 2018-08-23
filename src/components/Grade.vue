@@ -34,7 +34,7 @@
           </router-link>
           <router-link to="/Grade">
             <li class="nav-item active" id="Hover">
-              <a class="nav-link">Grade</a>
+              <a class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent">Grade</a>
             </li>
           </router-link>
           <router-link to="/Contact">

@@ -39,7 +39,7 @@
           </router-link>
           <router-link to="/Contact">
             <li class="nav-item active" id="Hover">
-              <a class="nav-link">Contact</a>
+              <a class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent">Contact</a>
             </li>
           </router-link>
         </ul>

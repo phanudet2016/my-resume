@@ -2,7 +2,7 @@
   <div>
     <!-- <nav class="navbar navbar-light" style="background-color:#3d3d3d;height:31px;">
       <a class="navbar-brand" style="color:#ffffff;font-size:12px;">phanudetkawilai2016@gmail.com</a>
-    </nav> -->
+    </nav> --><div>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
       <div class="navbar-brand">
         <router-link to="/" style="text-decoration: none;">
@@ -24,7 +24,7 @@
           </router-link>
           <router-link to="/resume">
             <li class="nav-item active" id="Hover">
-              <a class="nav-link">Resume</a>
+              <a class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent">Resume</a>
             </li>
           </router-link>
           <router-link to="/CV">
@@ -44,11 +44,11 @@
           </router-link>
         </ul>
       </div>
-    </nav>
+    </nav></div>
 
     <div class="main-content">
       <div class="section-1-with-background" style="color:#ffffff;">
-        <div class="content-row-1" >
+        <div class="content-row-1 content-main-text">
 
           <!-- <div class="content-inner">
             <h1 style="font-size:60px;">My Resume</h1>
@@ -60,8 +60,8 @@
               </div>
             </div>
           </div> -->
-          <div class="content-inner" style="padding-top:30px;">
-            <h1 style="font-size:60px;">My Resume</h1>
+          <div class="content-inner">
+            <h1 style="font-size:60px;padding-top:30px;">My Resume</h1>
             <div class="show-img" style="padding-top:30px;">
               <img src="../assets/section-1resume1.png" width="1163" height="521" style="pointer-events: none;">
             </div>
@@ -119,7 +119,7 @@
                     <h1 class="h1-col-row-2">Education</h1>
                     <p>
                       <b>2009 - 2014 : High School </b><br>Art-Math<br>Sanamchaikhet School, Chachoengsao <br><br>
-                      <b>2014 - 2018 : University </b><br>Bachelor of Technology (Information Technology), <br> King Mongkut's University of Technology North Bangkok
+                      <b>2014 - 2018 : University </b><br>Bachelor of Technology (Information Technology), <br> King Mongkut's University of Technology North Bangkok<br><br>
                     </p>
                   </div>
                   <div class="col-sm-1 icon-col icon-col-row-2">
@@ -128,17 +128,17 @@
                   <div class="col-sm-5 text-content" style="text-align:left;">
                     <h1 class="h1-col-row-2">Experience</h1>
                     <p>
-                      <b>- Internship at Piramid Solutions Co., Ltd.</b><br><br>
-                      <b>- Attended 24 Hours Hacking Hospital Services Development</b><br>
+                      <b>- </b>Internship at Piramid Solutions Co., Ltd.<br><br>
+                      <b>- </b>Attended 24 Hours Hacking Hospital Services Development<br>
                     </p>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-sm-1 icon-col icon-col-row-2">
-                    <img src="../assets/education-icon.png" style="pointer-events: none;">
+                    <img src="../assets/thinking-icon.png" style="pointer-events: none;">
                   </div>
-                  <div class="col-sm-5 text-content" style="text-align:left;">
+                  <div class="col-sm-5 text-content" style="text-align:left;border-bottom: none;">
                     <h1 class="h1-col-row-2">Passive Skill</h1>
                     <p>
                       <b>Positive Thinking : </b><font style="font-size:18px;">มีทัศนคติบวก ไม่มีงานไหนที่ยาก มีแค่งานที่เรารู้หรือยังไม่รู้แค่นั้นเอง</font><br><br>
@@ -152,11 +152,31 @@
             </div>
           </div>
         </div>
+
+        <div class="section-2-with-contact" style="color:#ffffff;background:#fff;">
+        <div class="content-inner">
+          <div class="logo-contact">
+            <a href="https://www.facebook.com/panudach.kawilai" target="_blank">
+              <img src="../assets/fb-icon.png" alt="Card image cap" style="border-radius:80;">
+            </a>
+            <a href="https://www.facebook.com/messages/t/panudach.kawilai" target="_blank">
+              <img src="../assets/fb-ms-icon.png" alt="Card image cap" style="border-radius:50;">
+            </a>
+            <a href="https://github.com/phanudet2016" target="_blank">
+              <img src="../assets/github-icon.png" alt="Card image cap" style="border-radius:50;">
+            </a>
+            <router-link to="/contact">
+              <img src="../assets/gmail-icon.png" alt="Card image cap" width="50" height="80" style="border-radius:50;">
+            </router-link>
+          </div>
+        </div>
+      </div>
+
+        <div class="footer">
+          <a style="color:rgb(244, 244, 244);font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
+        </div>
       </div>
     </div>
-    <!-- <div class="footer">
-      <a style="color:rgb(244, 244, 244);font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
-    </div> -->
   </div>
 </template>
 
@@ -268,6 +288,37 @@ a {
   padding-top: 30px;
 }
 
+.section-2-with-contact {
+  height: 142px;
+  margin-top: 50px;
+}
+.main-content-row-2 img{
+  /* margin: 0 10px; */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.main-content-row-2 {
+  padding: 50px;
+}
+.logo-contact img {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.footer {
+    /* position: fixed; */
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3d3d3d;
+    color: white;
+    text-align: center;
+    padding-top: 19px;
+}
+
 @media (max-width: 980px) {
   .navbar-brand {
     margin-left: 5px;
@@ -311,6 +362,20 @@ a {
   }
   .icon-skill {
     margin-left:30px;
+  }
+
+  .logo-contact img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .logo-contact {
+    padding-top: 10px;
+  }
+
+  .section-2-with-contact {
+    height: 80px;
   }
 }
 

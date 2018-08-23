@@ -29,7 +29,7 @@
           </router-link>
           <router-link to="/CV">
             <li class="nav-item active" id="Hover">
-              <a class="nav-link">CV</a>
+              <a class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent">CV</a>
             </li>
           </router-link>
           <router-link to="/Grade">

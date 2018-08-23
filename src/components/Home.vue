@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- <nav class="navbar navbar-light" style="background-color:#3d3d3d;height:31px;">
-      <a class="navbar-brand" style="color:#ffffff;font-size:12px;">phanudetkawilai2016@gmail.com</a>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
       <div class="navbar-brand">
         <router-link to="/" style="text-decoration: none;">
@@ -11,7 +8,6 @@
         </router-link>
       </div>
       <button style="border:none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span><img src="../assets/menu_btn.png" width="37" height="37"></span> -->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -19,7 +15,7 @@
         <ul class="navbar-nav">
           <router-link to="/">
             <li class="nav-item active" id="Hover">
-              <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent">Home <span class="sr-only">(current)</span></a>
             </li>
           </router-link>
           <router-link to="/resume">
@@ -48,31 +44,6 @@
     <div class="main-content" style="margin-top:72px;">
       <div class="section-1-with-background" style="color:#ffffff;">
         <div class="main-content-row-1">
-          <!-- <div class="text-inner-1">
-            <h1>Hello</h1>
-          </div>
-          <div class="text-inner-2">
-            <p>I'm Phanudet Kawilai</p>
-          </div>
-          <div class="text-inner-3">
-            <p>I am interested in Web / App Development career. I am a productive team player, fast learning and hard working</p>
-          </div> -->
-          <!-- <div class="card-group">
-            <div class="card" style="">
-              <div class="card-body">
-                <img src="../assets/me.png" alt="Card image cap" width="400" height="400" style="border-radius:400px;">
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div> -->
           <div class="content-inner">
             <div class="container">
               <div class="row">
@@ -126,9 +97,10 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer">
-      <a style="color:rgb(244, 244, 244);font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
+
+      <div class="footer">
+          <a style="color:rgb(244, 244, 244);font-size:12px;">@ 2018 Developed by Phanudet Kawilai</a>
+      </div>
     </div>
   </div>
 </template>
@@ -168,7 +140,7 @@ a {
   margin-right: 230px;
 }
 .footer{
-    position: fixed;
+    /* position: fixed; */
     height: 60px;
     left: 0;
     bottom: 0;
@@ -218,7 +190,8 @@ a {
 }
 
 .section-2-with-contact {
-  height: 180px;
+  height: 142px;
+  background: #fff;
 }
 .main-content-row-2 img{
   /* margin: 0 10px; */

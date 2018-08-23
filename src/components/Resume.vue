@@ -78,15 +78,16 @@
                   <div class="col-sm-5 text-content" style="text-align:left;">
                     <h1>Personal Info</h1>
                     <p>
-                      <b>Name : Phanudet Kawilai</b><br>
-                      <b>Birthday : 30-06-1995 </b><br>
-                      <b>Age : 23 </b><br>
-                      <b>Nationality : Thai </b><br>
-                      <b>Race : Thai </b><br>
-                      <b>Religion : Buddhism </b><br>
-                      <b>Marital status: Single </b><br>
-                      <b>Phone : +66 8 4867 8738 </b><br>
-                      <b>Address : 99/64 Village No.4, Latkrathing Sub-district, Sanamchaikhet District, Chachoengsao, 24160 </b>
+                      <b>Name : </b>Phanudet Kawilai<br>
+                      <b>Birthday : </b>30-06-1995 <br>
+                      <b>Age : </b>23 <br>
+                      <b>Nationality : </b>Thai <br>
+                      <b>Race : </b>Thai <br>
+                      <b>Religion : </b>Buddhism <br>
+                      <b>Marital status: </b>Single <br>
+                      <b>Phone : </b>+66 8 4867 8738 <br>
+                      <b>Email : </b>phanudetkawilai2016@gmail.com <br>
+                      <b>Address : </b>99/64 Village No.4, Latkrathing Sub-district, Sanamchaikhet District, Chachoengsao, 24160<br><br>
                     </p>
                   </div>
                   <div class="col-sm-1 icon-col">
@@ -96,48 +97,56 @@
                     <h1>Skills</h1>
                     <p>
                       <!-- <b>Vue.js</b> <i class="icon-skill"><img src="../assets/vue.png" width="50" height="50" style="text-align:left;pointer-events: none;"></i><br> -->
+                      <!-- <b>Vue.js</b><br>
                       <b>React Native</b><br>
+                      <b>Git</b><br>
                       <b>Backend with Node.js</b><br>
+                      <b>JSON</b><br>
                       <b>Bootstrap</b><br>
                       <b>HTML/CSS</b><br>
-                      <b>Javascript  </b><br>
+                      <b>Javascript  </b><br> -->
+                      <b>Programming : </b> Vue.js, React Native, Backend with Node.js, Git, JSON, Firebase, Axios, Bootstrap, HTML/CSS, Javascript<br><br>
+                      <b>Network : </b>Config Switch and Router, VLAN, InterVLAN, IP Routing Static OSPF EIGRP RIP
                     </p>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-sm-1 icon-col">
+                  <div class="col-sm-1 icon-col icon-col-row-2">
                     <img src="../assets/education-icon.png" style="pointer-events: none;">
                   </div>
                   <div class="col-sm-5 text-content" style="text-align:left;">
-                    <h1>Education</h1>
+                    <h1 class="h1-col-row-2">Education</h1>
                     <p>
-                      <b>Name</b> : Phanudet Kawilai <br>
-                      <b>Birthday</b> : Phanudet Kawilai <br>
-                      <b>Age</b> : Phanudet Kawilai <br>
-                      <b>Nationality</b> : Thai <br>
-                      <b>Race</b> : Thai <br>
-                      <b>Religion </b> : Buddhism <br>
-                      <b>Marital status</b> : Single <br>
-                      <b>Phone</b> : +66 8 4867 8738 <br>
+                      <b>2009 - 2014 : High School </b><br>Art-Math<br>Sanamchaikhet School, Chachoengsao <br><br>
+                      <b>2014 - 2018 : University </b><br>Bachelor of Technology (Information Technology), <br> King Mongkut's University of Technology North Bangkok
                     </p>
                   </div>
-                  <div class="col-sm-1 icon-col">
+                  <div class="col-sm-1 icon-col icon-col-row-2">
                     <img src="../assets/rocket-icon.png" style="pointer-events: none;">
                   </div>
                   <div class="col-sm-5 text-content" style="text-align:left;">
-                    <h1>Experience</h1>
+                    <h1 class="h1-col-row-2">Experience</h1>
                     <p>
-                      <b>Name</b> : Phanudet Kawilai <br>
-                      <b>Birthday</b> : Phanudet Kawilai <br>
-                      <b>Age</b> : Phanudet Kawilai <br>
-                      <b>Nationality</b> : Thai <br>
-                      <b>Race</b> : Thai <br>
-                      <b>Religion </b> : Buddhism <br>
-                      <b>Marital status</b> : Single <br>
-                      <b>Phone</b> : +66 8 4867 8738 <br>
+                      <b>- Internship at Piramid Solutions Co., Ltd.</b><br><br>
+                      <b>- Attended 24 Hours Hacking Hospital Services Development</b><br>
                     </p>
                   </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-1 icon-col icon-col-row-2">
+                    <img src="../assets/education-icon.png" style="pointer-events: none;">
+                  </div>
+                  <div class="col-sm-5 text-content" style="text-align:left;">
+                    <h1 class="h1-col-row-2">Passive Skill</h1>
+                    <p>
+                      <b>Positive Thinking : </b><font style="font-size:18px;">มีทัศนคติบวก ไม่มีงานไหนที่ยาก มีแค่งานที่เรารู้หรือยังไม่รู้แค่นั้นเอง</font><br><br>
+                      <b>Passion : </b><font style="font-size:18px;">ในการ develop เมื่อเราชอบอะไรแล้ว สุดท้ายเราจะสามารถทำสิ่งนั้นให้ออกมาดีได้ในที่สุด </font><br><br>
+                      <b>Evolution : </b><font style="font-size:18px;">ไม่ยึดติดกับ สไตล์เดิมๆ พร้อมที่จะพัฒนาตัวเองเสมอ </font><br>
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -214,7 +223,7 @@ a {
   /* background-color: red; */
 }
 .text-content h1 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 .text-content p {
@@ -250,6 +259,13 @@ a {
   border: none;
   transition: 0.3s;
   border-radius: 15px;
+}
+
+.icon-col-row-2 {
+  padding-top: 30px;
+}
+.h1-col-row-2 {
+  padding-top: 30px;
 }
 
 @media (max-width: 980px) {

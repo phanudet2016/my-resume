@@ -2,7 +2,7 @@
   <div>
     <!-- <nav class="navbar navbar-light" style="background-color:#3d3d3d;height:31px;">
       <a class="navbar-brand" style="color:#ffffff;font-size:12px;">phanudetkawilai2016@gmail.com</a>
-    </nav> --><div>
+    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="border-bottom:1px solid #dddddd;background-color:#ffffff;">
       <div class="navbar-brand">
         <router-link to="/" style="text-decoration: none;">
@@ -44,7 +44,7 @@
           </router-link>
         </ul>
       </div>
-    </nav></div>
+    </nav>
 
     <div class="main-content">
       <div class="section-1-with-background" style="color:#ffffff;">
@@ -146,7 +146,19 @@
                       <b>Evolution : </b><font style="font-size:18px;">ไม่ยึดติดกับ สไตล์เดิมๆ พร้อมที่จะพัฒนาตัวเองเสมอ </font><br>
                     </p>
                   </div>
-
+                  <div class="col-sm-1 icon-col icon-col-row-2">
+                    <img src="../assets/project-icon.png" style="pointer-events: none;">
+                  </div>
+                  <div class="col-sm-5 text-content" style="text-align:left;border-bottom: none;">
+                    <h1 class="h1-col-row-2">Senior Project</h1>
+                    <p>
+                      <b>Medical Devices Management System, </b>
+                        <font style="font-size:18px;">
+                          It’s a borrowing system that applied QR code scanning to borrow a
+                          medical device and use GPS with NB IoT for tracking the medical device by receive the value from GPS.
+                        </font><br><br>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

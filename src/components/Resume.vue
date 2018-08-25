@@ -75,9 +75,9 @@
                       <b>Race : </b>Thai <br>
                       <b>Religion : </b>Buddhism <br>
                       <b>Marital status: </b>Single <br>
-                      <b>Phone : </b>+66 8 4867 8738 <br>
+                      <b>Mobile Phone : </b>084-867-8738 <br>
                       <b>Email : </b>phanudetkawilai2016@gmail.com <br>
-                      <b>Address : </b>99/64 Village No.4, Latkrathing Sub-district, Sanamchaikhet District, Chachoengsao, 24160<br><br>
+                      <b>Address : </b>99/69 m.4, Latkrathing, Sanamchaikhet, Chachoengsao, 24160<br><br>
                     </p>
                   </div>
                   <div class="col-sm-1 icon-col">

@@ -52,7 +52,12 @@
 
           <div class="content-inner">
             <div class="btn-lenguang">
-              <button @click="changeLenguang()"><i class="fas fa-globe" style="padding-right:10px;"></i>ENG / TH</button>
+              <button @click="changeLenguang()">
+                <i class="fas fa-globe" style="padding-right:10px;"></i>
+                <span :style="colorChangeENG">ENG</span>
+                <span> / </span>
+                <span :style="colorChangeTH">TH</span>
+              </button>
             </div>
             <h1 style="font-size:60px;padding-top:60px;">Curriculum Vitae</h1>
             <div class="btn-to-download" style="padding-top:10px;">
@@ -61,7 +66,7 @@
 
             <div class="container-cv" style="padding:28px;padding-top:30px;">
               <div class="row content-row">
-                <div class="col text-content" style="padding:30px;color:#333">
+                <div v-if="lenguang === 'eng'" class="col text-content" style="padding:30px;color:#333">
                   <h1 class="text-heading">Phanudet Kawilai</h1>
                   <hr style="height:1px;border:none;background-color:#dddddd;" />
                   <p class="text-profile">
@@ -109,6 +114,58 @@
                     <a class="text-inner-topics">tracking the medical device by receive the value from GPS.</a><br>
                   </p>
                 </div>
+                <!--////////////////////////////////////////// CV THAI ///////////////////////////////////////////////-->
+                <div v-if="lenguang === 'th'" class="col text-content" style="padding:30px;color:#333">
+                  <h1 class="text-heading">ภานุเดช คะวิลัย</h1>
+                  <hr style="height:1px;border:none;background-color:#dddddd;" />
+                  <p class="text-profile">
+                    <b>อีเมล : </b>phanudetkawilai2016@gmail.com <br>
+                    <b>เบอร์โทร : </b>084-867-8738 <br>
+                    <b>ที่อยู่ : </b>99/69 หมู่ 5 ตำบลลาดกระทิง อำเภอสนามชัยเขต จังหวัดฉะเชิงเทรา 24160 <br>
+                    <b>วันเกิด : </b>30 มิถุนายน 2538 <br>
+                    <b>สถานภาพทางการทหาร : </b>สำเร็จหลักสูตรรักษาดินแดน
+                  </p><br>
+
+                  <p class="text-topics">เป้าหมายทางอาชีพ<br>
+                    <a class="text-inner-topics">Front-End Developer (Web Developer)</a>
+                  </p>
+
+                  <p class="text-topics">ทักษะ<br>
+                    <i style="font-size:15px;" class="text-inner-topics"><b>Programming</b></i><br>
+                    <a class="text-inner-topics">Vue.js, React Native, Backend with Node.js, Git, JSON, Firebase, Axios, Bootstrap, </a><br>
+                    <a class="text-inner-topics">HTML/CSS, Javascript</a><br><br>
+
+                    <i style="font-size:15px;" class="text-inner-topics"><b>Network</b></i><br>
+                    <a class="text-inner-topics">Config Switch and Router, VLAN, InterVLAN, IP Routing Static OSPF EIGRP RIP</a><br>
+                  </p>
+
+                  <p class="text-topics">ประวัติการศึกษา<br>
+                    <i style="font-size:15px;" class="text-inner-topics"><b>ปีการศึกษา 2557 - 2560</b></i><br>
+                    <a class="text-inner-topics"><b>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</b></a><br>
+                    <a class="text-inner-topics">ระดับปริญญาตรี สาขาวิชาเทคโนโลยีสารสนเทศ</a><br>
+                    <a class="text-inner-topics">แขนงวิชาเทคโนโลยีเครือข่าย คณะเทคโนโลยีและการจัดการอุตสาหกรรม</a><br>
+                    <a class="text-inner-topics">ด้วยเกรดเฉลี่ย 2.38</a><br><br>
+
+                    <i style="font-size:15px;" class="text-inner-topics"><b>ปีการศึกษา 2554 - 2556</b></i><br>
+                    <a class="text-inner-topics"><b>โรงเรียนสนามชัยเขต ฉะเชิงเทรา</b></a><br>
+                    <a class="text-inner-topics">ระดับมัธยมศึกษาตอนปลาย สายศิลป์-คํานวณ</a><br>
+                    <a class="text-inner-topics">ด้วยเกรดเฉลี่ย 2.91</a>
+                  </p>
+
+                  <p class="text-topics">ประวัติการทำงาน<br>
+                    <i style="font-size:15px;" class="text-inner-topics"><b>ปีการศึกษา 2559</b></i><br>
+                    <a class="text-inner-topics"><b>-</b> นักศึกษาฝึกงาน แผนก Network Engineer บริษัท ปิรามิด โซลูชั่น จำกัด</a><br>
+                    <a class="text-inner-topics"><b>-</b> เข้าร่วมกิจกรรม 24 Hours Hacking Hospital Services Development </a><br>
+                    <a class="text-inner-topics">เพื่อคิดหาทางแก้ไขปัญหาต่าง ๆ ให้กับโรงพยาบาลโดยใช้เทคโนโลยีเข้ามาผนวกภายในเวลา 24 ชั่วโมง</a><br>
+                  </p>
+
+                  <p class="text-topics">โครงงานพิเศษระดับปริญญาตรี<br>
+                    <a class="text-inner-topics"><b>ระบบการจัดการอุปกรณ์ทางการแพทย์</b> เป็นเว็บไซต์แพลตฟอร์มระบบยืม – คืนอุปกรณ์ทางการแพทย์</a><br>
+                    <a class="text-inner-topics">โดยใช้วิธีการสแกน QR Code เพื่อยืม – คืนและมีระบบติดตามอุปกรณ์โดยใช้ GPS ร่วมกับ NB IoT </a><br>
+                    <a class="text-inner-topics">ในการส่งค่าพิกัดเพื่อให้ทราบถึงตำแหน่งของอุปกรณ์พอสังเขป</a><br>
+                  </p>
+                </div>
+                <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
               </div>
             </div>
 
@@ -158,15 +215,21 @@ export default {
   name: 'cv',
   data () {
     return {
-      lenguang: 'eng'
+      lenguang: 'eng',
+      colorChangeTH: 'color: #868e96',
+      colorChangeENG: 'color: #fff'
     }
   },
   methods: {
     changeLenguang () {
       if (this.lenguang === 'eng') {
         this.lenguang = 'th'
+        this.colorChangeTH = 'color: #fff'
+        this.colorChangeENG = 'color: #868e96'
       } else {
         this.lenguang = 'eng'
+        this.colorChangeTH = 'color: #868e96'
+        this.colorChangeENG = 'color: #fff'
       }
     }
   }

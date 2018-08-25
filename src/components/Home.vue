@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="section-2-with-contact" style="color:#ffffff;">
+      <div class="section-2-with-contact" style="color:#353a40;">
         <div class="content-inner">
           <div class="logo-contact">
             <a href="https://www.facebook.com/panudach.kawilai" target="_blank">

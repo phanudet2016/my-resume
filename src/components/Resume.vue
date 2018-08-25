@@ -50,16 +50,6 @@
       <div class="section-1-with-background" style="color:#ffffff;">
         <div class="content-row-1 content-main-text">
 
-          <!-- <div class="content-inner">
-            <h1 style="font-size:60px;">My Resume</h1>
-            <div class="container" style="padding-top:20px;">
-              <div class="row">
-                <div class="col-sm">
-                  <img src="../assets/section-1resume1.png" alt="Card image cap" width="1163" height="521" style="pointer-events: none;">
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div class="content-inner">
             <h1 style="font-size:60px;padding-top:30px;">My Resume</h1>
             <div class="show-img" style="padding-top:30px;">
@@ -152,10 +142,9 @@
                   <div class="col-sm-5 text-content" style="text-align:left;border-bottom: none;">
                     <h1 class="h1-col-row-2">Senior Project</h1>
                     <p>
-                      <b>Medical Devices Management System, </b>
+                      <b>Medical Devices Management System <br></b>
                         <font style="font-size:18px;">
-                          It’s a borrowing system that applied QR code scanning to borrow a
-                          medical device and use GPS with NB IoT for tracking the medical device by receive the value from GPS.
+                          ระบบการจัดการอุปกรณ์ทางการแพทย์ เป็นเว็บไซต์แพลตฟอร์มระบบยืม – คืนอุปกรณ์ทางการแพทย์โดยใช้วิธีการสแกน QR Code เพื่อยืม – คืนและมีระบบติดตามอุปกรณ์โดยใช้ GPS ร่วมกับ NB IoT ในการส่งค่าพิกัดเพื่อให้ทราบถึงตำแหน่งของอุปกรณ์พอสังเขป
                         </font><br><br>
                     </p>
                   </div>

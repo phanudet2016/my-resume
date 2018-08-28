@@ -121,7 +121,7 @@
                   <p class="text-profile">
                     <b>อีเมล : </b>phanudetkawilai2016@gmail.com <br>
                     <b>เบอร์โทร : </b>084-867-8738 <br>
-                    <b>ที่อยู่ : </b>99/69 หมู่ 5 ตำบลลาดกระทิง อำเภอสนามชัยเขต จังหวัดฉะเชิงเทรา 24160 <br>
+                    <b>ที่อยู่ : </b>99/69 หมู่ 4 ตำบลลาดกระทิง อำเภอสนามชัยเขต จังหวัดฉะเชิงเทรา 24160 <br>
                     <b>วันเกิด : </b>30 มิถุนายน 2538 <br>
                     <b>สถานภาพทางการทหาร : </b>สำเร็จหลักสูตรรักษาดินแดน
                   </p><br>
@@ -144,12 +144,12 @@
                     <a class="text-inner-topics"><b>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</b></a><br>
                     <a class="text-inner-topics">ระดับปริญญาตรี สาขาวิชาเทคโนโลยีสารสนเทศ</a><br>
                     <a class="text-inner-topics">แขนงวิชาเทคโนโลยีเครือข่าย คณะเทคโนโลยีและการจัดการอุตสาหกรรม</a><br>
-                    <a class="text-inner-topics">ด้วยเกรดเฉลี่ย 2.38</a><br><br>
+                    <a class="text-inner-topics">เกรดเฉลี่ย 2.38</a><br><br>
 
                     <i style="font-size:15px;" class="text-inner-topics"><b>ปีการศึกษา 2554 - 2556</b></i><br>
                     <a class="text-inner-topics"><b>โรงเรียนสนามชัยเขต ฉะเชิงเทรา</b></a><br>
                     <a class="text-inner-topics">ระดับมัธยมศึกษาตอนปลาย สายศิลป์-คํานวณ</a><br>
-                    <a class="text-inner-topics">ด้วยเกรดเฉลี่ย 2.91</a>
+                    <a class="text-inner-topics">เกรดเฉลี่ย 2.91</a>
                   </p>
 
                   <p class="text-topics">ประวัติการทำงาน<br>
@@ -304,7 +304,8 @@ a {
 }
 
 .content-row {
-  border-radius:4px;background:#fff;
+  border-radius:4px;
+  background:#fff;
   /* ------------- shadow All around -------------- */
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
@@ -323,11 +324,13 @@ a {
 .text-topics {
   text-align: left;
   font-weight: bold;
+  font-size: 16px;
 }
 .text-inner-topics {
   font-weight: normal;
   text-align: left;
   margin-left: 200px;
+  font-size: 15px;
 }
 
 .container-cv {

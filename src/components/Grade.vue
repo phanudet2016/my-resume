@@ -58,7 +58,7 @@
               เนื่องจาก Thranscript ทางมหาวิทยาลัยกำลังดำเนินการออกให้อยู่
             </p>
             <div class="btn-to-download" style="padding-top:10px;">
-              <button>Download</button>
+              <button @click="downLoadFile()">Download</button>
             </div>
 
             <div class="container-grade" style="padding:10px;padding-top:35px;">
@@ -102,6 +102,12 @@ export default {
   name: 'grade',
   data () {
     return {
+    }
+  },
+  methods: {
+    downLoadFile () {
+      window.open('https://firebasestorage.googleapis.com/v0/b/my-resume-9e130.appspot.com/o/Grade.pdf?alt=media&token=a1801a57-a9fd-43f0-a430-e7b0fb2d9ac7')
+      // window.location.href = 'https://firebasestorage.googleapis.com/v0/b/my-resume-9e130.appspot.com/o/Grade.pdf?alt=media&token=a1801a57-a9fd-43f0-a430-e7b0fb2d9ac7'
     }
   }
 }

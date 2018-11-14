@@ -12,3 +12,4 @@ firebase.initializeApp(config)
 
 export const db = firebase.database()
 export const contactRef = db.ref('contact')
+export const UrlDowloadFileRef = db.ref('UrlDowloadFile')

@@ -196,7 +196,6 @@ export default {
             message: this.message,
             email: this.email
           })
-
           if (this.email !== '') {
             if (re.test(this.email) === false) {
               this.checkFormatEmail = true

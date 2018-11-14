@@ -61,7 +61,7 @@
             </div>
             <h1 style="font-size:60px;padding-top:60px;">Curriculum Vitae</h1>
             <div class="btn-to-download" style="padding-top:10px;">
-              <button>Download</button>
+              <button @click="downLoadFile()">Download</button>
             </div>
 
             <div class="container-cv" style="padding:28px;padding-top:30px;">
@@ -72,18 +72,18 @@
                   <p class="text-profile">
                     <b>E-mail : </b>phanudetkawilai2016@gmail.com <br>
                     <b>Mobile Phone : </b>084-867-8738 <br>
-                    <b>Address : </b>99/69 m.4, Latkrathing, Sanamchaikhet, Chachoengsao, 24160 <br>
+                    <b>Address : </b>Am House 42/1 Soi Chao Decha, Petchaburi Road, Bangkapi, Huai Khwang, Bangkok, 10310<br>
                     <b>Birthday : </b>30 June 1995 <br>
                     <b>Military Status : </b>Finished Reserved Officers Training Corps Course
                   </p><br>
 
                   <p class="text-topics">CAREER OBJECTIVE<br>
-                    <a class="text-inner-topics">Front-End Developer (Web Developer)</a>
+                    <a class="text-inner-topics">Web Developer</a>
                   </p>
 
                   <p class="text-topics">SKILLS<br>
                     <i style="font-size:15px;" class="text-inner-topics"><b>Programming</b></i><br>
-                    <a class="text-inner-topics">Vue.js, React Native, Backend with Node.js, Git, JSON, Firebase, Axios, Bootstrap, </a><br>
+                    <a class="text-inner-topics">Vue.js, React Native, Backend with Node.js, C++, Java, PHP, Git, JSON, Firebase, Axios, Bootstrap, </a><br>
                     <a class="text-inner-topics">HTML/CSS, Javascript</a><br><br>
 
                     <i style="font-size:15px;" class="text-inner-topics"><b>Network</b></i><br>
@@ -121,7 +121,7 @@
                   <p class="text-profile">
                     <b>อีเมล : </b>phanudetkawilai2016@gmail.com <br>
                     <b>เบอร์โทร : </b>084-867-8738 <br>
-                    <b>ที่อยู่ : </b>99/69 หมู่ 4 ตำบลลาดกระทิง อำเภอสนามชัยเขต จังหวัดฉะเชิงเทรา 24160 <br>
+                    <b>ที่อยู่ : </b>Am House 42/1 ซอยฉายเดชา ถนนเพชรบุรี แขวงบางกะปิ เขตห้วยขวาง กรุงเทพฯ 10310<br>
                     <b>วันเกิด : </b>30 มิถุนายน 2538 <br>
                     <b>สถานภาพทางการทหาร : </b>สำเร็จหลักสูตรรักษาดินแดน
                   </p><br>
@@ -211,6 +211,8 @@
 </template>
 
 <script>
+import { UrlDowloadFileRef } from './firebase'
+
 export default {
   name: 'cv',
   data () {
@@ -231,7 +233,14 @@ export default {
         this.colorChangeTH = 'color: #868e96'
         this.colorChangeENG = 'color: #fff'
       }
+    },
+    downLoadFile () {
+      let UrlDownloadFile = this.UrlDownloadFile[1].URL
+      window.open(UrlDownloadFile)
     }
+  },
+  firebase: {
+    UrlDownloadFile: UrlDowloadFileRef
   }
 }
 </script>

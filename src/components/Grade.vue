@@ -98,16 +98,21 @@
 </template>
 
 <script>
+import { UrlDowloadFileRef } from './firebase'
+
 export default {
   name: 'grade',
   data () {
     return {
     }
   },
+  firebase: {
+    UrlDownloadFile: UrlDowloadFileRef
+  },
   methods: {
     downLoadFile () {
-      window.open('https://firebasestorage.googleapis.com/v0/b/my-resume-9e130.appspot.com/o/Grade.pdf?alt=media&token=a1801a57-a9fd-43f0-a430-e7b0fb2d9ac7')
-      // window.location.href = 'https://firebasestorage.googleapis.com/v0/b/my-resume-9e130.appspot.com/o/Grade.pdf?alt=media&token=a1801a57-a9fd-43f0-a430-e7b0fb2d9ac7'
+      let UrlDownloadFile = this.UrlDownloadFile[2].URL
+      window.open(UrlDownloadFile)
     }
   }
 }

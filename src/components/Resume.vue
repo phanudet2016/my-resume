@@ -57,7 +57,7 @@
             </div>
             <h1 style="font-size:41px;color:#3d3d3d;padding-top:60px;" class="text-download"><b>Download my resume</b></h1>
             <div class="btn-to-download" style="padding-top:10px;">
-              <button>Download</button>
+              <button @click="downLoadFile()">Download</button>
             </div>
             <div class="content-resume" style="padding-top:60px;">
               <div class="container-fluid">
@@ -77,7 +77,7 @@
                       <b>Marital status: </b>Single <br>
                       <b>Mobile Phone : </b>084-867-8738 <br>
                       <b>Email : </b>phanudetkawilai2016@gmail.com <br>
-                      <b>Address : </b>99/69 m.4, Latkrathing, Sanamchaikhet, Chachoengsao, 24160<br><br>
+                      <b>Address : </b>Am House 42/1 Soi Chao Decha, Petchaburi Road, Bangkapi, Huai Khwang, Bangkok, 10310<br><br>
                     </p>
                   </div>
                   <div class="col-sm-1 icon-col">
@@ -95,7 +95,7 @@
                       <b>Bootstrap</b><br>
                       <b>HTML/CSS</b><br>
                       <b>Javascript  </b><br> -->
-                      <b>Programming : </b> Vue.js, React Native, Backend with Node.js, Git, JSON, Firebase, Axios, Bootstrap, HTML/CSS, Javascript<br><br>
+                      <b>Programming : </b> Vue.js, React Native, Backend with Node.js, C++, Java, PHP, Git, JSON, Firebase, Axios, Bootstrap, HTML/CSS, Javascript<br><br>
                       <b>Network : </b>Config Switch and Router, VLAN, InterVLAN, IP Routing Static OSPF EIGRP RIP
                     </p>
                   </div>
@@ -182,10 +182,21 @@
 </template>
 
 <script>
+import { UrlDowloadFileRef } from './firebase'
+
 export default {
   name: 'resume',
   data () {
     return {
+    }
+  },
+  firebase: {
+    UrlDownloadFile: UrlDowloadFileRef
+  },
+  methods: {
+    downLoadFile () {
+      let UrlDownloadFile = this.UrlDownloadFile[0].URL
+      window.open(UrlDownloadFile)
     }
   }
 }
